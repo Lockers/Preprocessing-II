@@ -162,11 +162,36 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 2rem;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation {
+  justify-content: space-between;
+  border-bottom: 2px dashed silver;
+  margin-top: 2rem;
+}
+.navigation .heading {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 31rem;
+  padding-top: 1rem;
+  align-content: flex-start;
+}
+.navigation nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation a {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .footer {
   width: 100%;
