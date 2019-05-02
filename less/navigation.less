@@ -1,13 +1,16 @@
 .navigation{
     justify-content: space-between;
-    border-bottom: 2px dashed silver;
-    margin-top: 2rem;
+    border-bottom: @bottomBorder;
+    margin-top: @bigMargin;
+   
      .heading{
         display:flex;
         justify-content: flex-start;
         padding-right: 31rem;
-        padding-top: 1rem;
+        padding-top: @smallPadding;
         align-content: flex-start;
+      
+    
     }
     & nav{
         display:flex;
@@ -15,12 +18,13 @@
         
     }
     a{
-        padding: 2rem;
-        font-family:  'Roboto', sans-serif;
+        padding: @bigPadding;
+        font-family: @fontFamily;
         font-size: 1.5rem;
         text-decoration: none;
         color: black;
         font-weight: bold;
     }
+ 
 }
 
