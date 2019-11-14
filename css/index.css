@@ -181,7 +181,20 @@ img {
   margin: 2rem;
   text-decoration: none;
   color: black;
-  vertical-align: center;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-container nav {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-container a {
+    align-items: center;
+    margin: 4rem;
+  }
 }
 .footer {
   width: 100%;
@@ -203,11 +216,23 @@ img {
 .home header p {
   border-bottom: 1px dashed black;
 }
+@media (max-width: 500px) {
+  .home header {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -236,6 +261,13 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -245,9 +277,23 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    margin: 3rem;
+    width: 70%;
+    align-items: center;
+  }
 }
 .btn {
   background-color: #17A2B8;
@@ -259,4 +305,9 @@ img {
   vertical-align: center;
   font-size: 2rem;
   padding: 0.5rem;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }

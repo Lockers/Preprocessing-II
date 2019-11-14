@@ -13,6 +13,19 @@
         margin: 2rem;
         text-decoration: none;
         color: black;
-        vertical-align: center;
+    }
+    @media @mobile{
+        flex-direction: column;
+        nav {
+            margin: 0 auto;
+            // padding: 2rem;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a {
+            align-items: center;
+            margin: 4rem;
+        }
+
     }
 }
